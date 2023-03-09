@@ -22,7 +22,7 @@ namespace SynCOBJ
             var overrides = state.PatchMod.EnumerateMajorRecords().Where(x=>x.FormKey.ModKey != state.PatchMod.ModKey).Count();
             if (state.PatchMod.ModHeader.Stats.NumRecords - overrides < 4096)
             {
-                Console.WriteLine($"ESLIfing patch stack with {overrides} and {state.PatchMod.ModHeader.Stats.NumRecords - overrides} new records");
+                Console.WriteLine($"ESLIfing patch stack with {overrides} overrides and {state.PatchMod.ModHeader.Stats.NumRecords - overrides} new records");
                 state.PatchMod.ModHeader.Flags |= SkyrimModHeader.HeaderFlag.LightMaster;
             }
         }
