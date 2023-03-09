@@ -18,7 +18,8 @@ namespace SynCOBJ
         }
         public static void RunPatch(IPatcherState<ISkyrimMod, ISkyrimModGetter> state)
         {
-            if(state.PatchMod.ModHeader.Stats.NumRecords < 4096) {
+            if (state.PatchMod.ModHeader.Stats.NumRecords < 4096)
+            {
                 Console.WriteLine($"ESLIfing patch stack");
                 state.PatchMod.ModHeader.Flags |= SkyrimModHeader.HeaderFlag.LightMaster;
             }
