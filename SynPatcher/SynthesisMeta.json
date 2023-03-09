@@ -1,0 +1,9 @@
+{
+  "Nickname": "SynPerkCOBJPatcher",
+  "Visibility": "Visible",
+  "OneLineDescription": "Simple patcher to eslify patches (must be at end of patcher stack)",
+  "LongDescription": "ESLifies synthesis patches if it is acceptable to ESL",
+  "PreferredAutoVersioning": "Default",
+  "RequiredMods": [],
+  "TargetedReleases": []
+}
